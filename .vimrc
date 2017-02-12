@@ -1,8 +1,11 @@
 autocmd StdinReadPre * let s:std_in=1
 autocmd FileType ruby compiler ruby
+let mapleader = ","
 set expandtab
 set shiftwidth=2
 set softtabstop=2
+set updatetime=250
+set nu
 filetype plugin indent on
 filetype plugin on
 set incsearch
@@ -15,6 +18,7 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
+map <leader>n :NERDTreeToggle<cr>
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -34,4 +38,8 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'ngmy/vim-rubocop'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-rails'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 call plug#end()
