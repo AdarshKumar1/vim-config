@@ -5,7 +5,7 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 set updatetime=250
-set nu
+set rnu
 filetype plugin indent on
 filetype plugin on
 set incsearch
