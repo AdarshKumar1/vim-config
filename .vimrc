@@ -45,4 +45,5 @@ Plug 'tpope/vim-rails'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'mxw/vim-jsx'
 call plug#end()
